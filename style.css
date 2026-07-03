@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo { font-size: 24px; font-weight: 900; text-decoration: none;color: #222;cursor: pointer;}
+.logo span { color: #e60012; background-color: #ffd500; padding: 2px 6px; border-radius: 4px; margin-left: 2px; }
+.nav a { text-decoration: none; color: #444; margin-left: 25px; font-weight: 700; font-size: 15px; }
+
+/* Стилі банерів */
+.banners-stack { display: flex; flex-direction: column; }
+.banner { height: 50vh; display: flex; align-items: center; padding-left: 8%; color: white; }
+.banner-content { max-width: 550px; }
+.tag { display: inline-block; padding: 5px 12px; background-color: rgba(255, 255, 255, 0.2); border-radius: 20px; font-size: 13px; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+.banner h2 { font-size: 40px; font-weight: 800; margin-bottom: 10px; }
+.banner p { font-size: 17px; margin-bottom: 25px; opacity: 0.9; }
+
+.banner-btn { display: inline-block; background-color: #ffd500; color: #000; padding: 12px 28px; text-decoration: none; font-weight: 700; border-radius: 25px; text-transform: uppercase; font-size: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+
+.technic-bg { background: linear-gradient(90deg, rgba(10, 20, 25, 0.95) 40%, rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1594787318286-3d835c1d207f?q=80&w=1470') center/cover no-repeat; }
+.city-bg { background: linear-gradient(90deg, rgba(0, 45, 135, 0.95) 40%, rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1470') center/cover no-repeat; }
+.classic-bg { background: linear-gradient(90deg, rgba(190, 0, 10, 0.95) 40%, rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1585366119957-e5730f3d6fcd?q=80&w=1470') center/cover no-repeat; }
+
+/* Стилі каталогів і сітки */
+.catalog-section { padding: 50px 8% 20px 8%; }
+.catalog-title h2 { font-size: 28px; font-weight: 800; color: #222; margin-bottom: 8px; }
+.line { width: 80px; height: 4px; border-radius: 2px; }
+.tech-line { background-color: #00a896; }
+.city-line { background-color: #005595; }
+.classic-line { background-color: #ffd500; }
+
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 30px 0; }
+.product-card { background-color: #fff; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.2s; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.07); }
+
+.product-image { width: 100%; height: 160px; object-fit: contain; background-color: #fafafa; border-radius: 8px; margin-bottom: 15px; }
+.product-code { font-size: 11px; color: #999; font-weight: 700; margin-bottom: 5px; }
+.product-card h3 { font-size: 16px; font-weight: 700; color: #333; margin-bottom: 10px; height: 44px; overflow: hidden; }
+.price { font-size: 19px; font-weight: 800; color: #111; margin-bottom: 15px; }
+
+/* Кнопки */
+.buy-btn { width: 100%; border: none; padding: 12px; font-size: 14px; font-weight: 700; border-radius: 8px; cursor: pointer; text-transform: uppercase; }
+.tech-btn { background-color: #00a896; color: white; }
+.city-btn { background-color: #005595; color: white; }
+.classic-btn { background-color: #ffd500; color: #000; }
+
+footer {
+    background-color: #14171c;
+    color: #e8e8e8;
+    padding: 20px 6%;
+    text-align: center;
+}
+
+.footer-logo { font-size: 24px; font-weight: 900; color: #fff; margin-bottom: 14px; text-decoration: none; cursor: pointer;}
+.footer-logo span { color: #e60012; background-color: #ffd500; padding: 2px 6px; border-radius: 4px; margin-left: 2px; }
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.footer-nav a {
+    color: #a7adb5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer-nav a:hover { color: #ffd500; }
+
+footer p {
+    font-size: 13px;
+    color: #7d838b;
+    margin: 0;
+}
